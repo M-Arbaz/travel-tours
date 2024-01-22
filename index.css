@@ -1,0 +1,224 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Merriweather', serif;
+    transition: 0.5s;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.flx_r{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.flx_c{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.bgc{
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    background-color: #00000073;
+}
+.m-tb{
+    margin: 15vh 0px ;
+}
+.p-tb{
+    padding: 4vh 0vh;
+}
+.p-lr{
+    padding: 0vh 4vh;
+}
+.grd{
+    display: grid;
+    place-items: center;
+}
+h1{
+    font-size: 3rem;
+}
+.sec1{
+    flex-wrap: nowrap;
+    padding: 0px 10vw;
+    color: #fff;
+    text-align: center;
+    min-height: 80vh;
+    background-image: url(./img/cover.jpg);
+    background-blend-mode: color;
+}
+.sec1>p,.btns{
+    margin: 3vh 0px;
+}
+.btns>a{
+    text-transform:uppercase;
+    font-weight:800;
+    padding: 2vh 20px;
+    border-radius: 50px;
+  
+}
+.btns>a:nth-child(1){
+    color: white;
+    background-color: rgba(167, 151, 112, 0.767);
+    
+}
+.btns>a:nth-child(2){
+    outline: 2px solid #fff;
+    margin: 5px;
+}
+.btns>a:nth-child(2):hover{
+    color: white;
+    background-color: rgba(167, 151, 112, 0.767);
+    outline: none;
+}
+.btns>a:nth-child(1):hover{
+    background-color: rgba(2, 2, 2, 0.459);
+    outline: 2px solid #fff;
+}
+.temp_c i{
+    font-size: 32px;
+    margin: 5px;
+}
+.temp_c{
+    width: 250px ;
+    height: 130px;
+    background-color: rgb(167, 151, 112);
+    border-radius: 15px;
+    margin: 10px;
+    padding: 20px;
+    transition: 0.5s;
+}
+.temp_c:hover{
+    box-shadow: 5px 10px 10px 0px #000;
+}
+.sec2{
+    padding: 20px ;
+    justify-content: space-around;
+    min-height: 80vh;
+}
+.sec2 h2{
+    font-size: 36px;
+}
+.sec2_c{
+    flex-basis: 50%;
+ 
+}
+.sec2_c:nth-child(1){
+    display: flex;
+    justify-content: space-around;
+}
+.sec2_c:nth-child(1)>div{
+    border: 0.5vw solid rgb(167, 151, 112);
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+}
+.sec2_c img{
+    width: 100%;
+    height: 100%;
+}
+.sec3{
+    background-color: rgb(167, 151, 112);
+    justify-content: space-around;
+    text-align: center;
+    color: #fff;
+}
+.sec3_c{
+    position: relative;
+    margin: 20px 10px;
+    width: 350px;
+    height: 400px;
+}
+.sec3_c img{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.sec3_cc{
+    background-color: rgba(2, 2, 2, 0.459);
+    padding: 2vw;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+.sec_4{
+    height: 100vh;
+}
+.sec4{
+    text-align: center;
+    color: white;
+    position: relative;
+    background-image: url(./img/cover.jpg);
+    background-color: #00000073;
+    background-blend-mode: color;
+    min-height: 60vh;
+}
+.sec4_c{
+    position: absolute;
+    bottom: -50%;
+    width: 100%;
+    color: #000;
+}
+.sec4_cc{
+    border: 1px solid black;
+    background-color: #fff;
+    width: 20%;
+    height: 350px;
+    padding: 5px;
+    margin: 5px;
+}
+.sec4_cc img{
+    width: 100%;
+    max-height: 250px;
+}
+.sec5{
+    background-image: url(./img/cover.jpg);
+    background-color: rgba(2, 2, 2, 0.459);
+    background-blend-mode: color;
+    align-items: flex-start;
+    justify-content: space-around;
+    min-height: 70vh;
+    color: #fff;
+}
+.sec5 h2{
+    font-size: 2.5rem;
+}
+.sec5 ul{
+    list-style-type: none;
+}
+.sec5 ul li::before{
+   content: '\2713';
+   color: rgb(167, 151, 112);
+    font-weight: bold;
+    font-size: 20px;
+   width: 1em;
+}
+@media only screen and (max-width:800px) {
+    .sec_4{
+        height: auto;
+    }
+    .sec4{
+        min-height: 70vh;
+        position: inherit;
+    }
+    .sec4_c{
+        position: inherit;
+    }
+    .sec4_cc{
+        flex-basis: 40%;
+    }
+}
+@media only screen and (max-width:480px){
+    .sec4_cc{
+        flex-basis: 90%;
+    }
+}
